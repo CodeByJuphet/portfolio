@@ -122,43 +122,9 @@
 
         <div class="columns is-multiline">
             <div class="column is-8-desktop">
-                <form id="contact-form" class="contact__form" method="post" action="mail.php">
-                 <!-- form message -->
-                    <div class="columns is-multiline">
-                        <div class="column is-12">
-
-                            <div class="notification is-success contact__msg mb-4" style="display:none" role="alert">
-                                Your message was sent successfully.
-                            </div>
-
-                            <select class="input" id="exampleFormControlSelect1">
-                                <option>I Need help in ...</option>
-                                <option>Software Design</option>
-                                <option>Development cycle</option>
-                                <option>Software Development</option>
-                                <option>Maintenance</option>
-                                <option>Process Query</option>
-                                <option>Cost and Duration</option>
-                                <option>Modal Delivery</option>
-                            </select>
-                        </div>
-                        <div class="column is-12">
-                            <input name="subject" id="subject" type="text" class="input" placeholder="Your Subject">
-                        </div>
-                        <div class="column is-12">
-                            <input name="name" id="name" type="text" class="input" placeholder="Your Name">
-                        </div>
-                        <div class="column is-12">
-                            <input name="email" id="email" type="email" class="input" placeholder="Email Address">
-                        </div>
-                        <div class="column is-12">
-                            <textarea name="message" id="message" class="input" placeholder="Your Message"></textarea>
-                        </div>
-                        <div class="column is-12">
-                            <button class="btn btn-main" name="submit" type="submit">Send Message</button>
-                        </div>
-                    </div>
-                </form>
+                <div class="google-map mt-90 mb-6">
+                    <div id="map"></div>
+                </div>
             </div>
 
             <div class="column is-4-desktop">
@@ -186,14 +152,6 @@
                             <a href="http://www.themefisher.com"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-
-         <div class="columns is-multiline">
-            <div class="column is-12">
-                 <div class="google-map mt-90 mb-6">
-                    <div id="map"></div>
                 </div>
             </div>
         </div>
@@ -270,6 +228,7 @@
 
     
     <!-- Main jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="plugins/jquery/jquery.js"></script>
     <script src="js/contact.js"></script>
    <!--  Magnific Popup-->
@@ -286,6 +245,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
     
     <script src="js/script.js"></script>
+
 
   </body>
   </html>
